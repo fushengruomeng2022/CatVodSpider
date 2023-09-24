@@ -103,7 +103,7 @@ public class Bili extends Spider {
 
     @Override
     public String homeVideoContent() {
-        String api = "https://api.bilibili.com/x/web-interface/popular?ps=20";
+        String api = "";
         String json = OkHttp.string(api, getHeader());
         Resp resp = Resp.objectFrom(json);
         List<Vod> list = new ArrayList<>();
